@@ -8,5 +8,5 @@ export TMPDIR=~/qiime_tmp
 module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
-join_paired_ends.py -f ~/2018_02_smb/Read1.fastq -r ~/2018_02_smb/Read2.fastq -o ~/2018_02_smb/SeqPrep_joined
+join_paired_ends.py -f ~/2018_02_smb/Read1.fastq.gz -r ~/2018_02_smb/Read2.fastq.gz -o ~/2018_02_smb/SeqPrep_joined
 source deactivate
