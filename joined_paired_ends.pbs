@@ -14,3 +14,4 @@ join_paired_ends.py \
 -f /lustre/home/d411/patrosel/Read1.fastq.gz \
 -r /lustre/home/d411/patrosel/Read2.fastq.gz \
 -o /lustre/home/d411/patrosel/SeqPrep_joined
+source deactivate
