@@ -9,9 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 join_paired_ends.py \ 
--m SeqPrep \
--b /lustre/home/d411/patrosel/Index.fastq.gz \
--f /lustre/home/d411/patrosel/Read1.fastq.gz \
--r /lustre/home/d411/patrosel/Read2.fastq.gz \
--o /lustre/home/d411/patrosel/SeqPrep_joined
+-m SeqPrep -b /lustre/home/d411/patrosel/2018_02_smb/Index.fastq.gz -f /lustre/home/d411/patrosel/2018_02_smb/Read1.fastq.gz -r /lustre/home/d411/patrosel/2018_02_smb/Read2.fastq.gz -o /lustre/home/d411/patrosel/2018_02_smb/SeqPrep_joined
 source deactivate
