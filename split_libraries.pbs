@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "splitting libraries"
-split_libraries_fastq.py -i ~/2018_02_smb/SeqPrep_joined/fastqjoin.join.fastq -b ~/2018_02_smb/Index.fastq.gz -o slout -m ~/2018_02_smb/map_incomplete.tsv -q 19
+split_libraries_fastq.py -i ~/2018_02_smb/SeqPrep_joined/fastqjoin.join.fastq -b ~/2018_02_smb/Index.fastq.gz -o Split_Libraries_19 -m ~/"map - Sheet1.tsv" -q 19 --store_qual_scores --rev_comp_barcode --rev_comp_mapping_barcodes
 source deactivate
