@@ -11,5 +11,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Picking representative sequence"
-pick_rep_set.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs/uclust_ref_picked_otus/seqs_otus.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs/Pick_Rep_Set -m most_abundant l- ~/2018_02_smb/Pick_Closed_Reference_OTUs
+pick_rep_set.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs/uclust_ref_picked_otus/seqs_otus.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs/Pick_Rep_Set -m most_abundant f- ~/2018_02_smb/silva_132_97_16S.fna l- ~/2018_02_smb/Pick_Closed_Reference_OTUs
 source deactivate
