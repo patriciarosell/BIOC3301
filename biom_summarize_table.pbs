@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Summarize BIOM table"
-biom summarize -i ~/2018_02_smb/Pick_Closed_Reference_OTUs/otu_table.biom
+biom summarize -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/otu_table.biom
 source deactivate
