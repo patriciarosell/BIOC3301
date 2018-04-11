@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Core diversity analysis"
-core_diversity_analyses.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs/otu_table.biom -o ~/2018_02_smb/Core_Diversity_Analyses -m ~/"map - Sheet1.tsv" -e 35000 -t ~/2018_02_smb/97_otus.tre -a -O 32 --recover_from_failure
+core_diversity_analyses.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/otu_table.biom -o ~/2018_02_smb/Core_Diversity_Analyses_close_25 -m ~/"map - Sheet1.tsv" -e 641 -t ~/2018_02_smb/97_otus.tre -a -O 32 --recover_from_failure
 source deactivate
