@@ -8,7 +8,7 @@ export TMPDIR=~/qiime_tmp
 module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
-module load R
+R
 echo "Normalizing OTU table"
 normalize_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/otu_table.biom -a CSS -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/CSS_normalized_otu_table.biom
 source deactivate
