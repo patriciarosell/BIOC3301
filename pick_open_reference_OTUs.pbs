@@ -10,5 +10,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Picking OTUs with open reference"
-pick_open_reference_otus.py -i ~/git/Split_Libraries_25/seqs.fna -r ~/2018_02_smb/silva_132_97_16S.fna -s 0.1 --prefilter_percent_id 0.0 -o ~/2018_02_smb/Pick_Open_Reference_OTUs_25 -a -O 32 
+pick_open_reference_otus.py -i ~/git/Split_Libraries_25/seqs.fna -r ~/2018_02_smb/silva_132_97_16S.fna -s 0.01 --prefilter_percent_id 0.0 -o ~/2018_02_smb/Pick_Open_Reference_OTUs_25_001 -a -O 32 
 source deactivate
