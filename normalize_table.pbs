@@ -6,7 +6,7 @@
 cd $PBS_O_WORKDIR
 export TMPDIR=~/qiime_tmp
 module load miniconda/python2
-module load R
+module load R-3.3.1-gcc-6.2.0-zjrjm3s
 echo "loading virtualenv"
 source activate qiime1
 echo "Normalizing OTU table"
