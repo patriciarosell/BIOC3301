@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Identifying chimeric sequences"
-parallel_identify_chimeric_seqs.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs/rep_set.fasta -a ~/2018_02_smb/97_alignment.fna -o ~/2018_02_smb/Pick_Closed_Reference_OTUs/identified_chimeras.txt -T -O 32
+identify_chimeric_seqs.py -i ~/git/Split_Libraries_25/seqs.fna -r ~/2018_02_smb/silva_132_97_16S.fna -m usearch61 -o ~/2018_02_smb/Split_Libraries_25/identified_chimeras.txt -T -O 32
 source deactivate
