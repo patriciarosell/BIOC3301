@@ -8,6 +8,6 @@ export TMPDIR=~/qiime_tmp
 module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
-echo "Normalizing OTU table"
+echo "Rarefied OTU table"
 parallel_multiple_rarefactions.py -o $PWD/rarefied_otu_tables/ -m 10 -x 140 -s 10 -n 2 -i $PWD/otu_table.biom
 source deactivate
