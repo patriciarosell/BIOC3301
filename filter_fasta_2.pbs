@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Removing chimeric sequences"
-filter_fasta.py -f ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/pynast_aligned/rep_set_aligned.fasta -s ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/chimeric_seqs_cs.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/rep_set_aligned_chimerafree.fasta
+filter_fasta.py -f ~/git/Split_Libraries_25/seqs.fna -s ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/chimeric_seqs_usearch61/chimeras.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/seqs_chimeras_usearch61_filtered.fna -n
 source deactivate
