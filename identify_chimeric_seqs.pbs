@@ -8,6 +8,6 @@ export TMPDIR=~/qiime_tmp
 module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
-echo "Identifying chimeric sequences"
-parallel_identify_chimeric_seqs.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/pynast_aligned -o ~/2018_02_smb/Split_Libraries_25/identified_chimeraslayer.txt
+echo "Parallel dentifying chimeric sequences"
+parallel_identify_chimeric_seqs.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/pynast_aligned -a ~/2018_02_smb/97_alignment.fna -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/identified_chimeraslayer.txt
 source deactivate
