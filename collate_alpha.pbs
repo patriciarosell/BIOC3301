@@ -10,5 +10,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Collate alpha diversity tables"
-collate_alpha.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/parallel_adiv_2 -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/collated_alpha_2
+collate_alpha.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/parallel_adiv_32 -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/collated_alpha_2
 source deactivate
