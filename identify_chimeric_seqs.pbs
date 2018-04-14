@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Identifying chimeric sequences"
-identify_chimeric_seqs.py -i ~/git/Split_Libraries_25/seqs.fna -o ~/2018_02_smb/Split_Libraries_25/identified_chimeraslayer.txt
+parallel_identify_chimeric_seqs.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/pynast_aligned -o ~/2018_02_smb/Split_Libraries_25/identified_chimeraslayer.txt
 source deactivate
