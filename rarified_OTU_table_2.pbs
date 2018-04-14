@@ -1,0 +1,13 @@
+#!/bin/bash --login
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=32
+#PBS -N 2018_core_diversity_analyses
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+export TMPDIR=~/qiime_tmp
+module load miniconda/python2
+echo "loading virtualenv"
+source activate qiime1
+echo "Rarefied OTU table"
+parallel_multiple_rarefactions.py -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/rarefied_otu_tables_32/ -m 36000 -x 120000 -s 10000 -n 50 -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/otu_table_no_singletons_abundance.biom -O 32
+source deactivate
