@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Picking OTUs with open reference"
-pick_closed_reference_otus.py -i ~/git/Split_Libraries_25/seqs.fna -r ~/2018_02_smb/silva_132_97_16S.fna -t ~/2018_02_smb/consensus_taxonomy_7_levels.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25 -a -O 32 
+pick_closed_reference_otus.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/seqs_chimeras_usearch61_filtered.fna -r ~/2018_02_smb/silva_132_97_16S.fna -t ~/2018_02_smb/consensus_taxonomy_7_levels.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61 -a -O 32 
 source deactivate
