@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Assign phylogeny"
-assign_taxonomy.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/rep_set.fna -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/id_to_taxonomy.txt -r ~/2018_02_smb/silva_132_97_16S.fna
+assign_taxonomy.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/rep_set.fna -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/ -t ~/2018_02_smb/consensus_taxonomy_7_levels.txt -r ~/2018_02_smb/silva_132_97_16S.fna
 source deactivate
