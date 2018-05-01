@@ -1,0 +1,13 @@
+#!/bin/bash --login
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=32
+#PBS -N 2018_open_otus_25
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+export TMPDIR=~/qiime_tmp
+module load miniconda/python2
+echo "loading virtualenv"
+source activate qiime1
+echo "Filter OTUs from map file"
+filter_otus_by_sample.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/uclust_ref_picked_otus/seqs_chimeras_usearch61_filtered_otus.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/filtered_by_sample_otus
+source deactivate
