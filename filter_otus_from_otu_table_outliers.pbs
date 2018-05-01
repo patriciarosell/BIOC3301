@@ -10,5 +10,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Filtering outliers"
-filter_samples_from_otu_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/otu_table_no_singletons.biom -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/otu_table_no_singletons_ids_removed.biom --sample_id_fp ~/ids_to_be_removed.tsv --negate_sample_id_fp 
+filter_samples_from_otu_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table.biom -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed.biom --sample_id_fp ~/ids_to_be_removed.tsv --negate_sample_id_fp 
 source deactivate
