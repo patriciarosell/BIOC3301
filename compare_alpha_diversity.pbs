@@ -1,0 +1,13 @@
+#!/bin/bash --login
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=32
+#PBS -N 2018_parallel_alpha_diveristy
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+export TMPDIR=~/qiime_tmp
+module load miniconda/python2
+echo "loading virtualenv"
+source activate qiime1
+echo "Compare alpha diversity"
+compare_alpha_diversity.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/collated_alpha_2 -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/compare_alpha_diversity -c SampleVegetation -m ~/map_complete.tsv -t nonparametric -p bonferroni
+source deactivate
