@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Make rarefraction plots"
-make_rarefaction_plots.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/collated_notparallel_adiv_20 -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/alpha_rarefraction_plots_20_notparallel -m ~/Filtered_vegetation_map_file.tsv
+make_rarefaction_plots.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/collated_notparallel_adiv_80 -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/alpha_rarefraction_plots_80_notparallel -m ~/Filtered_vegetation_map_file.tsv
 source deactivate
