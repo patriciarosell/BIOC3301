@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Alpha rarefraction from OTU table"
-alpha_rarefaction.py -o ~/2018_02_smb/Alpha_rarefraction_pick_/ -m 35000 -x 195000 -s 20000 -n 50 -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/otu_table_no_singletons_abundance.biom
+alpha_rarefaction.py -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/alpha_rarefraction -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map.biom -m ~/Filtered_vegetation_map_file.tsv -a -O 32 -t ~/2018_02_smb/97_otus.tre -n 50 -e 180000 --min_rare_depth 0
 source deactivate
