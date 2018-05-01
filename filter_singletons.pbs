@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Filter singletons"
-filter_otus_from_otu_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map.biom -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/otu_table_ids_removed_with_map_no_singletons.biom -n 2 
+filter_otus_from_otu_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map.biom -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map_no_singletons.biom -n 2 
 source deactivate
