@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Make OTU table"
-make_otu_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/seqs_chimeras_usearch61_filtered_sfiltered_otus.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map.biom -t ~/2018_02_smb/consensus_taxonomy_7_levels.txt -m ~/Filtered_vegetation_map_file.tsv 
+make_otu_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/seqs_chimeras_usearch61_filtered_sfiltered_otus.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/otu_table_ids_filtered_map_taxonomy.biom -t ~/2018_02_smb/consensus_taxonomy_7_levels.txt -m ~/Unfiltered_vegetation_map_file.tsv
 source deactivate
