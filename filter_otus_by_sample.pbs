@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Filter OTUs from map file"
-filter_otus_by_sample.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/uclust_ref_picked_otus/seqs_chimeras_usearch61_filtered_otus.txt -f ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/seqs_chimeras_usearch61_filtered.fna -s ~/ids_to_be_removed.tsv -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/filtered_by_sample_otus
+filter_otus_by_sample.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/uclust_ref_picked_otus/seqs_chimeras_usearch61_filtered_otus.txt -f ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/seqs_chimeras_usearch61_filtered.fna -s ~/ids_to_be_removed.tsv -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61
 source deactivate
