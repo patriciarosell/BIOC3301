@@ -1,5 +1,5 @@
 #!/bin/bash --login
-#PBS -l walltime=01:00:00
+#PBS -l walltime=02:00:00
 #PBS -l select=1:ncpus=32
 #PBS -N 2018_core_diversity_analyses
 #PBS -A d411-training
@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Alpha rarefraction from OTU table"
-alpha_rarefaction.py -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/alpha_rarefraction -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map.biom -m ~/Filtered_vegetation_map_file.tsv -a -O 32 -t ~/2018_02_smb/97_otus.tre -n 50 -e 180000 --min_rare_depth 0
+alpha_rarefaction.py -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/alpha_rarefraction_2 -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map_no_singletons.biom -m ~/Filtered_vegetation_map_file.tsv -a -O 32 -t ~/2018_02_smb/97_otus.tre -n 20 -e 185000 --min_rare_depth 0
 source deactivate
