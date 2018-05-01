@@ -10,5 +10,5 @@ echo "loading virtualenv"
 source activate qiime1
 module load R-3.3.1-gcc-6.2.0-zjrjm3s
 echo "Normalizing OTU table"
-normalize_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/otu_table.biom -a CSS -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25/CSS_normalized_otu_table.biom
+normalize_table.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map_no_singletons.biom -a CSS -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/CSS_normalized_otu_table.biom
 source deactivate
