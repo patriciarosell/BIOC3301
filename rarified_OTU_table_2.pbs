@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Rarefied OTU table"
-multiple_rarefactions.py -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/rarefied_otu_tables_40/ -m 10 -x 40000 -s 4000 -n 20 -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map_no_singletons.biom
+multiple_rarefactions.py -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/rarefied_otu_tables_40/ -m 10 -x 40000 -s 4000 -n 20 -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/otu_table_ids_filtered_map_taxonomy.biom
 source deactivate
