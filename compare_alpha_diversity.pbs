@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Compare alpha diversity"
-compare_alpha_diversity.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/collated_parallel_adiv_40/chao1.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/statistics/ -c VegetationSpecies -m ~/Filtered_vegetation_map_file.tsv -t nonparametric -p bonferroni
+compare_alpha_diversity.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/collated_parallel_adiv_40/chao1.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/statistics/ -c SampleVegetation -m ~/2_Unfiltered_vegetation_map_file.tsv -t nonparametric -p bonferroni
 source deactivate
