@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Parallel alpha diversity"
-parallel_alpha_diversity.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/rarefied_otu_tables_80_notparallel -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/parallel_adiv_80 -m observed_otus,chao1,PD_whole_tree,goods_coverage -t ~/2018_02_smb/97_otus.tre
+parallel_alpha_diversity.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/rarefied_otu_tables_40 -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/parallel_adiv_40 -m observed_otus,chao1,PD_whole_tree,goods_coverage -t ~/2018_02_smb/97_otus.tre
 source deactivate
