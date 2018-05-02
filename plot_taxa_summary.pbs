@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Core diversity analysis"
-plot_taxa_summary.py -i /lustre/home/d411/patrosel/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/summarize_taxa/Filtered_vegetation_map_file_L2.txt,/lustre/home/d411/patrosel/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/summarize_taxa/Filtered_vegetation_map_file_L3.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/plot_taxa_summary -l Phylum,Class -c pie,bar,area -t png
+plot_taxa_summary.py -i /lustre/home/d411/patrosel/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/summarize_taxa/Filtered_vegetation_map_file_L2.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/plot_taxa_summary -l Phylum -c pie,bar,area -t png
 source deactivate
