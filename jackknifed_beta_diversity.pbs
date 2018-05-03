@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Jackniffed"
-jackknifed_beta_diversity.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/otu_table_ids_removed_with_map_no_singletons.biom -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/jackknifed_beta_diversity -m ~/Filtered_vegetation_map_file.tsv -t ~/2018_02_smb/97_otus.tre -e 40000 -a -O 32 
+jackknifed_beta_diversity.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/otu_table_ids_removed_with_map_no_singletons.biom -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Unfiltered_with_grass/jackknifed_beta_diversity -m ~/2_Unfiltered_vegetation_map_file.tsv -t ~/2018_02_smb/97_otus.tre -e 40000 -a -O 32 
 source deactivate
