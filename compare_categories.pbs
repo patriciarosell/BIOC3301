@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Compare categories"
-compare_categories.py --method permanova -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/beta_diversity_through_plots/unweighted_unifrac_dm.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/statistics/beta_diversity_through_plots/permanova_output -c VegetationSpecies,SamplePh,SamplePotassium,SampleNitrogen,SamplePhosphorus -m ~/Categorical_mapping_file.tsv
+compare_categories.py --method adonis -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/Filtered_with_grass/beta_diversity_through_plots/unweighted_unifrac_dm.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/statistics/beta_diversity/adonis_output_samplevegetation -c VegetationSpecies -m ~/2_Unfiltered_mapping_file.tsv
 source deactivate
