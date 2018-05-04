@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Compare categories"
-compare_categories.py --method adonis -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/beta_diversity_through_plots_final/weighted_unifrac_dm.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/statistics/beta_diversity/anosim_output_Vegetationspecies_weighted -c VegetationSpecies -m ~/Filtered_vegetation_map_file.tsv
+compare_categories.py --method adonis -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/beta_diversity_through_plots/weighted_unifrac_dm.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/statistics/beta_diversity/anosim_output_Vegetationspecies_weighted -c VegetationSpecies -m ~/Filtered_vegetation_map_file.tsv
 source deactivate
