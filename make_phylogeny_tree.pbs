@@ -8,6 +8,6 @@ export TMPDIR=~/qiime_tmp
 module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
-echo "Align representative sequences"
-make_phylogeny.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/rep_set.fna -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/rep_phylo.tre
+echo "Make phylogeny"
+make_phylogeny.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/seqs_chimeras_usearch61_filtered_sfiltered.fasta -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/rep_phylo.tre
 source deactivate
