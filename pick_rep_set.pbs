@@ -11,5 +11,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Picking representative sequence"
-pick_rep_set.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/uclust_ref_picked_otus/seqs_chimeras_usearch61_filtered_otus.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/rep_set.fna -r /lustre/home/d411/patrosel/2018_02_smb/silva_132_97_16S.fna
+pick_rep_set.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/seqs_chimeras_usearch61_filtered_sfiltered_otus.txt -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/rep_set_for_tree.fasta -r /lustre/home/d411/patrosel/2018_02_smb/silva_132_97_16S.fna
 source deactivate
