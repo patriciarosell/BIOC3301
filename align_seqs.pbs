@@ -10,5 +10,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "Align representative sequences"
-align_seqs.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/rep_set.fna -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61/pynast_aligned -t ~/2018_02_smb/97_alignment.fna
+align_seqs.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/rep_set.fna -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/pynast_aligned -t ~/2018_02_smb/97_alignment.fna
 source deactivate
