@@ -9,5 +9,5 @@ module load miniconda/python2
 echo "loading virtualenv"
 source activate qiime1
 echo "make 2d plots"
-make_2d_plots.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/jackknifed_beta_diversity_2/unweighted_unifrac/pcoa -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/2d_plots_unweighted_betadiversity -m ~/Filtered_vegetation_map_file.tsv --scree 
+make_2d_plots.py -i ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/jackknifed_beta_diversity_2/unweighted_unifrac/pcoa -o ~/2018_02_smb/Pick_Closed_Reference_OTUs_25_without_chimeras_usearch61_final/2d_plots_output -m ~/Filtered_vegetation_map_file.tsv --scree 
 source deactivate
