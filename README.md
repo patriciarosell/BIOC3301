@@ -10,7 +10,7 @@ Raw data processing:
 3. Identify chimeras using usearch against the SILVA database, v132 (3_identify_chimeric_seqs.pbs)
 4. Filter chimeras (4_filter_fasta_chimeras.pbs)
 5. Pick closed reference OTUs against SILVA database (5_pick_otus_after_chimera_filtering.pbs)
-6. Filter OTU map to create two new mapping files, one containing "bulk soil" and "rhizosphere" samples (i.e. sample types) (6_filter_otus_by_sample.pbs) 
+6. Filter OTU map to create a new mapping files, only containing "bulk soil" and "rhizosphere" samples (i.e. sample types) (6_filter_otus_by_sample.pbs) 
 7. Make new OTU tables for comparing sample types ("bulk soil" and rhizosphere") and sample species ("Prunus cerasus" and "Platanus x acerifolia") (7_make_otu_table.pbs)
 8. Removing singletons from OTU table (8_filter_singletons.pbs)
 
